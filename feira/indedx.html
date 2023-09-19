@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+
+    <section id="sec_1">
+        <div id="div_1">USP São Carlos</div>
+    </section>
+</body>
+
+<style>
+    /* Introdução */
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        width: 100%;
+        background-color: azure;
+        overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Parallax - first section*/
+    section {
+        display: flex;
+        width: 100vw;
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-attachment: fixed;
+    }
+
+
+
+
+    #sec_1 {
+        background-image: url(img/img1.jpg);
+        height: 50vh;
+        animation: open 3.5s forwards ease-in-out;
+        margin-bottom: 25%;
+    }
+
+    @keyframes open {
+        from {
+            transform: translateY(-100%);
+        }
+
+        to {
+            transform: translateY(40%);
+        }
+    }
+
+    @keyframes open-height {
+        from {
+            transform: translateY(40%);
+        }
+
+        to {
+            transform: translateY(0%);
+            height: 100vh;
+        }
+    }
+
+    /* section:nth-of-type(3) {
+        background-image: url(img/img2.jpg);
+    } */
+
+    /* div - first section */
+    #div_1 {
+        right: 10vw;
+        display: flex;
+        height: 10vh;
+        width: 100vw;
+        margin-left: 5%;
+        background-color: rgba(51, 51, 51, 0.466);
+        font-size: 4.5rem;
+        font-family: 'Anton', sans-serif;
+        color: aliceblue;
+        font-weight: 100;
+        opacity: 0;
+    }
+
+    @keyframes open-opacity {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+</style>
+
+
+
+</html>
